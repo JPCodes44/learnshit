@@ -10,13 +10,12 @@ test("can get a weather string", async () => {
     const arrayval = array[idx]
     
     expect(array).toContain(arrayval)
-
 })
 
 test('get a random integer between 1-10', async () => {
     const validvalues = [...Array(array.length).keys()]
     console.log(validvalues)
-    return expect(validvalues).toContain(randomInteger(array.length))
+    expect(validvalues).toContain(randomInteger(array.length))
 })
 
 test('check delay', async () => {
