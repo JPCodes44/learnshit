@@ -8,16 +8,14 @@ const getRandomWeather = (array) => {
     return array[randomInteger(array.length)]
 }
 
-const delay = async () => {
-    await new Promise((res, rej) => {
-        setTimeout(res, 50000)
-    })
+const delay = (t) => {
+    return new Promise((res) => setTimeout(res, t))
 }
 
-const getWeather = () => {
-    delay
-    return getRandomWeather(["1", "2"])
+const getWeather = async (array, t) => {
+    await delay(t)
+    return getRandomWeather(array)
 }
 
-console.log(getWeather())
 
+module.exports = { randomInteger, getRandomWeather, delay, getWeather }
