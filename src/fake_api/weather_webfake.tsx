@@ -8,9 +8,15 @@ const getRandomWeather = (array: string[]): string => {
     return array[randomInteger(array.length)]
 }
 
-const getWeather = () => {
-    setTimeout(getRandomWeather, 50000)
+const delay = async () => {
+    await new Promise((res, rej) => {
+        setTimeout(res, 50000)
+    })
+}
+
+const getWeather = (array: string[]) => {
+    delay
+    return getRandomWeather(array)
 }
 
 export default getWeather
-

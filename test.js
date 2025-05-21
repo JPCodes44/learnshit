@@ -1,16 +1,23 @@
+// A fake weather return that waits 5 seconds then returns the random weather from a given list
 
-const syncHello = () => {
-    setTimeout(() => console.log("sync hello from the future"), 1000)
-    console.log("sync hello")
+const randomInteger = (max) => {
+    return Math.floor(Math.random() * max)
 }
 
-const asyncHello = async () => {
-    console.log("async hello");
+const getRandomWeather = (array) => {
+    return array[randomInteger(array.length)]
+}
+
+const delay = async () => {
     await new Promise((res, rej) => {
-        setTimeout(res, 1000);
-    });
-    console.log("async hello from the future");
+        setTimeout(res, 50000)
+    })
 }
 
-asyncHello().catch(console.error);
-syncHello();
+const getWeather = () => {
+    delay
+    return getRandomWeather(["1", "2"])
+}
+
+console.log(getWeather())
+
