@@ -4,15 +4,15 @@ export type PaddingProps = {
     children?: React.ReactNode
 }
 
-export type ULProps = {
-    styleLink?: React.CSSProperties;
+export type ContentProps = {
+    style?: React.CSSProperties;
     children?: React.ReactNode
-
 }
 
 export type ListProps = {
+    text?: string
     href?: string
-    styleLink?: React.CSSProperties;
+    style?: React.CSSProperties;
     children?: React.ReactNode
 
 }
