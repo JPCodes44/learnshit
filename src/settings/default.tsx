@@ -20,6 +20,8 @@ export type ULProps = CommonPropsWithStyle<{}>
 
 export type BodyPaddingProps = CommonPropsWithStyle<{}>
 
+export type ButtonProps = CommonPropsWithStyle<{}>
+
 export type ListProps = CommonPropsWithStyle<{
     text?: string
     href?: string
