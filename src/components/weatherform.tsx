@@ -6,10 +6,10 @@ import { JsxElement } from "typescript";
 import { NavBar } from "./navbar"
 import { WeatherHeader } from "./weatherheader";
 import { WeatherFooter } from "./weatherfooter"
-import { PaddingProps } from "../settings/default";
+import { BodyPaddingProps, PaddingProps } from "../settings/default";
 
 
-const BodyPadding = ({children}: PaddingProps) => {
+export const BodyPadding: React.FC<BodyPaddingProps> = ({children}) => {
     return(
     <div style={{margin: "30px", padding: "40px", borderStyle: "dashed", borderWidth: "5px", }}
         >{children}
@@ -17,15 +17,24 @@ const BodyPadding = ({children}: PaddingProps) => {
     )
 }
 
-
-
 export const WeatherForm = () => {
     return(
         <>
             <NavBar />
             <WeatherHeader />
             <BodyPadding>
-                <WeatherList />
+                <WeatherList>Germany</WeatherList>
+                <WeatherList>Canada</WeatherList>
+                <WeatherList>US of A</WeatherList>
+                <WeatherList>Spain</WeatherList>
+                <WeatherList>Poland</WeatherList>
+                <WeatherList>Poland</WeatherList>
+
+                <WeatherList>Poland</WeatherList>
+
+                <WeatherList>Poland</WeatherList>
+
+
             </BodyPadding>
             <WeatherFooter />
         </>

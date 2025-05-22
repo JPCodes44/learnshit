@@ -1,18 +1,26 @@
 // Default types to import in each tsx page
 
-export type PaddingProps = {
-    children?: React.ReactNode
-}
+// =========== COMMON PROPS ===========
+// Allows for additional types to be passed through <{}> using <P extends object = {}> = P & ....
 
-export type ContentProps = {
-    style?: React.CSSProperties;
-    children?: React.ReactNode
-}
+type CommonProps<P extends object = {}> = P & React.PropsWithChildren<{}>
 
-export type ListProps = {
+type CommonPropsWithStyle<P extends object = {}> = P & CommonProps<{
+    style?: React.CSSProperties
+}>
+
+// ============ SPECIFIC PROPS ===========
+// You can enter additional types in <{}> based on your components needs
+
+export type PaddingProps = CommonPropsWithStyle<{}>
+
+export type ContentProps = CommonPropsWithStyle<{}>
+
+export type ULProps = CommonPropsWithStyle<{}>
+
+export type BodyPaddingProps = CommonPropsWithStyle<{}>
+
+export type ListProps = CommonPropsWithStyle<{
     text?: string
     href?: string
-    style?: React.CSSProperties;
-    children?: React.ReactNode
-
-}
+}>
