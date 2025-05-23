@@ -9,7 +9,7 @@ import { WeatherFooter } from "./weatherfooter"
 import { BodyPaddingProps, PaddingProps } from "../settings/default";
 
 
-export const BodyPadding: React.FC<BodyPaddingProps> = ({children}) => {
+export const BodyPadding = ({children}: BodyPaddingProps) => {
     return(
     <div style={{margin: "30px", padding: "40px", borderStyle: "dashed", borderWidth: "5px", }}
         >{children}
@@ -29,12 +29,8 @@ export const WeatherForm = () => {
                 <WeatherList>Spain</WeatherList>
                 <WeatherList>Poland</WeatherList>
                 <WeatherList>Poland</WeatherList>
-
                 <WeatherList>Poland</WeatherList>
-
                 <WeatherList>Poland</WeatherList>
-
-
             </BodyPadding>
             <WeatherFooter />
         </>

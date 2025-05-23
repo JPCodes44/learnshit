@@ -8,15 +8,16 @@ const getRandomWeather = (array: string[]): string => {
     return array[randomInteger(array.length)]
 }
 
-const delay = async () => {
+const delay = async (t: number) => {
     await new Promise((res, rej) => {
-        setTimeout(res, 50000)
+        setTimeout(res, t)
     })
 }
 
-const getWeather = (array: string[]) => {
-    delay
-    return getRandomWeather(array)
+const getWeather = async (array: string[]): Promise<string> => {
+    await delay(500)
+    const weather = getRandomWeather(array)
+    return weather
 }
 
 export default getWeather

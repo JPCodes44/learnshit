@@ -2,6 +2,7 @@ import React from 'react';
 import { NavBarSections } from './navbarul';
 import { NavBarList } from './navbarlist';
 import { Menu } from "lucide-react";
+import { NavProps } from '../settings/default';
 
 const HamburgerButton: React.FC = () => {
     return(<button
@@ -18,7 +19,7 @@ const HamburgerButton: React.FC = () => {
     </button>)
   };
 
-const NavHeader: React.FC<React.PropsWithChildren> = ({children}) => {
+const NavHeader = ({children}: NavProps) => {
     return(
     <div style={{ fontWeight: 'bold' }}>{children}</div>
     )

@@ -3,11 +3,11 @@ import { PaddingProps } from "../settings/default";
 import { ListProps } from "../settings/default";
 
 
-export const WeatherList: React.FC<ListProps> = ({children}) => {
+export const WeatherList = ({children}: ListProps) => {
     return (
         <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex",
-            flexDirection: "row",
-            justifyContent: "center"}}>
+                    flexDirection: "row",
+                    justifyContent: "center"}}>
           <li
             style={{
               backgroundColor: "#fff",

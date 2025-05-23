@@ -2,7 +2,7 @@ import { ContentProps, ULProps} from "../settings/default";
   
 
   
-export const NavBarSections: React.FC<ULProps> = ({ children }) => (
+export const NavBarSections= ({ children }: ULProps) => (
   <ul style={{
     listStyle: 'none',
     display: 'flex',
