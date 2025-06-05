@@ -1,13 +1,5 @@
 import React from "react";
-import getWeather from "../fake_api/weather_webfake";
-import {WeatherItem} from "./weatheritem"
-import {WeatherList} from "./weatherlist"
-import { JsxElement } from "typescript";
-import { NavBar } from "./navbar"
-
-type BodyPaddingProps = {
-    children?: React.ReactNode
-}
+import { BodyPaddingProps } from "../../settings/default";
 
 const FooterField = ({children}: BodyPaddingProps) => {
     return(

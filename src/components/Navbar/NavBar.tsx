@@ -1,8 +1,8 @@
 import React from 'react';
-import { NavBarSections } from './navbarul';
-import { NavBarList } from './navbarlist';
+import { NavBarSections } from './NavBarSections';
+import { NavBarList } from './NavBarList';
 import { Menu } from "lucide-react";
-import { NavProps } from '../settings/default';
+import { NavProps } from '../../settings/default';
 
 const HamburgerButton: React.FC = () => {
     return(<button

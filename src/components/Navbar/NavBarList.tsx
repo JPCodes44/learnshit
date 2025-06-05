@@ -1,4 +1,4 @@
-import { ListProps } from "../settings/default";
+import { ListProps } from "../../settings/default";
 
 
 export const NavBarList = ({href, children}: ListProps )=> {

@@ -1,4 +1,4 @@
-import { ContentProps, ULProps} from "../settings/default";
+import { ContentProps, ULProps} from "../../settings/default";
   
 
   

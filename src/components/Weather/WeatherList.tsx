@@ -1,6 +1,5 @@
 import React from "react";
-import { PaddingProps } from "../settings/default";
-import { ListProps } from "../settings/default";
+import { ListProps } from "../../settings/default";
 
 
 export const WeatherList = ({children}: ListProps) => {
