@@ -1,10 +1,6 @@
-import React, { MouseEventHandler, useState } from "react";
-import getWeather from "../fake_api/weather_webfake";
-import {WeatherItem} from "./weatheritem"
-import {WeatherList} from "./weatherlist"
-import { JsxElement } from "typescript";
-import { NavBar } from "./navbar"
-import { ButtonProps, ListOfWeathers, PaddingProps } from "../settings/default";
+import React, { useState } from "react";
+import getWeather from "../../fake_api/weather_webfake";
+import { ButtonProps, ListOfWeathers, PaddingProps } from "../../settings/default";
 
 
 

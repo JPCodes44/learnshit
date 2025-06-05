@@ -4,8 +4,8 @@ import App from './App';
 import '@testing-library/jest-dom';
 
 
-test('renders learn react link', () => {
+test('renders weather generator button', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const buttonElement = screen.getByText(/Generate the weather/i);
+  expect(buttonElement).toBeInTheDocument();
 });

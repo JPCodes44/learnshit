@@ -1,12 +1,9 @@
 import React from "react";
-import getWeather from "../fake_api/weather_webfake";
-import {WeatherItem} from "./weatheritem"
-import {WeatherList} from "./weatherlist"
-import { JsxElement } from "typescript";
-import { NavBar } from "./navbar"
-import { WeatherHeader } from "./weatherheader";
-import { WeatherFooter } from "./weatherfooter"
-import { BodyPaddingProps, PaddingProps } from "../settings/default";
+import { WeatherList } from "./WeatherList";
+import { NavBar } from "../Navbar/NavBar";
+import { WeatherHeader } from "./WeatherHeader";
+import { WeatherFooter } from "./WeatherFooter";
+import { BodyPaddingProps } from "../../settings/default";
 
 
 
