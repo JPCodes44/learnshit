@@ -60,7 +60,19 @@ export const weatherTheme = {
         xl: 32,    // extra-large gap (wide margins, hero spacing)
         xxl: 40,   // extra-extra-large (full-width breaks, super spaced layouts)
     },
-      
+
+    borders: {
+        widths: {
+            thin: 1,
+            medium: 3,
+            thick: 5,
+        },
+        styles: {
+            solid: "solid",
+            dashed: "dashed",
+        },
+    },
+
     fontWeights: {
         normal: "normal",
         bold: "bold",

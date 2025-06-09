@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import getWeather from "../../fake_api/weather_webfake";
 import { ButtonProps, ListOfWeathers, PaddingProps } from "../../settings/default";
+import { weatherTheme } from "../../../theme/defaulttheme";
 
 
 
@@ -29,7 +30,14 @@ const HeaderField = ({children}: PaddingProps) => {
     }
 
     return(
-        <div style={{margin: "30px", padding: "40px", borderStyle: "dashed", borderWidth: "5px", display: "flex", justifyContent: "center", }}
+        <div style={{
+            margin: weatherTheme.spacings.xl,
+            padding: weatherTheme.spacings.xxl,
+            borderStyle: weatherTheme.borders.styles.dashed,
+            borderWidth: weatherTheme.borders.widths.thick,
+            display: "flex",
+            justifyContent: "center",
+        }}
             >
             <div style={{display: "flex", justifyContent: "center", alignItems: 'center', flexDirection: "column"}}>
                 {children}            
